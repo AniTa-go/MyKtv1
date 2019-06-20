@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5B0AB365-8780-48AE-81E2-BEC360FD4969}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyKTV</RootNamespace>
+    <AssemblyName>MyKTV</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOrderBySinger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOrderBySinger.Designer.cs">
+      <DependentUpon>FrmOrderBySinger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOrderBySongName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOrderBySongName.Designer.cs">
+      <DependentUpon>FrmOrderBySongName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOrderBySongType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOrderBySongType.Designer.cs">
+      <DependentUpon>FrmOrderBySongType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOrderByWordCount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOrderByWordCount.Designer.cs">
+      <DependentUpon>FrmOrderByWordCount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOrderedSongList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOrderedSongList.Designer.cs">
+      <DependentUpon>FrmOrderedSongList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPlay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPlay.Designer.cs">
+      <DependentUpon>FrmPlay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSongList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSongList.Designer.cs">
+      <DependentUpon>FrmSongList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOrderBySinger.resx">
+      <DependentUpon>FrmOrderBySinger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOrderBySongName.resx">
+      <DependentUpon>FrmOrderBySongName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOrderBySongType.resx">
+      <DependentUpon>FrmOrderBySongType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOrderByWordCount.resx">
+      <DependentUpon>FrmOrderByWordCount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOrderedSongList.resx">
+      <DependentUpon>FrmOrderedSongList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPlay.resx">
+      <DependentUpon>FrmPlay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSongList.resx">
+      <DependentUpon>FrmSongList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QQ图片20190424143430.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QQ图片20190424143450.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QQ图片20190424143708.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QQ图片20190424143712.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QQ图片20190424143722.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\505474a3ea.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QQ图片20190424161028.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QQ图片20190424161015.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QQ图片20190424161032.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QQ图片20190424161037.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QQ图片20190424161039.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QQ图片20190424164501.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QQ图片20190424164509.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QQ图片20190424164515.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QQ图片20190424164520.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QQ图片20190424164524.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20170822181145_d41d8cd98f00b204e9800998ecf8427e_25.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QQ图片20190424161046.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\timgC5P9H5PQ.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1711CEFCA6B82E4B6D56210D96B9C116.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\timg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tim.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tiadg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tiadg1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\timg1DBFJ13IV.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\timg1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

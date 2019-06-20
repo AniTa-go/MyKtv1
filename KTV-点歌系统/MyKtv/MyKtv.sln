@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "MyKtv\Server.csproj", "{2E3ACFF3-DDDE-46B5-8490-11C4F27CAD4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyKTV", "Clients\MyKTV\MyKTV\MyKTV.csproj", "{5B0AB365-8780-48AE-81E2-BEC360FD4969}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KTVClient", "KTVClient\KTVClient.csproj", "{AD6BFA29-5F8F-4E0F-BA54-342A30DE2F73}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2E3ACFF3-DDDE-46B5-8490-11C4F27CAD4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E3ACFF3-DDDE-46B5-8490-11C4F27CAD4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E3ACFF3-DDDE-46B5-8490-11C4F27CAD4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E3ACFF3-DDDE-46B5-8490-11C4F27CAD4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B0AB365-8780-48AE-81E2-BEC360FD4969}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B0AB365-8780-48AE-81E2-BEC360FD4969}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B0AB365-8780-48AE-81E2-BEC360FD4969}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B0AB365-8780-48AE-81E2-BEC360FD4969}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD6BFA29-5F8F-4E0F-BA54-342A30DE2F73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD6BFA29-5F8F-4E0F-BA54-342A30DE2F73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD6BFA29-5F8F-4E0F-BA54-342A30DE2F73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD6BFA29-5F8F-4E0F-BA54-342A30DE2F73}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
